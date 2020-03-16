@@ -1,4 +1,4 @@
-all: zoom.pdf zoom.html
+all: zoom.pdf zoom.html zoom.docx
 
-zoom.pdf zoom.html &: zoom.md *.png
+zoom.pdf zoom.html zoom.docx &: zoom.md *.png
 	pandoc $< -o $@
